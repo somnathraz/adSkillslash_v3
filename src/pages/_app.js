@@ -1,5 +1,24 @@
-import "@/styles/globals.css";
+// import "tailwindcss/tailwind.css";
+import "../styles/globals.css";
+import { GoogleTagManager } from "@next/third-parties/google";
+import { Montserrat } from "next/font/google";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+const montserrat = Montserrat({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  display: "swap",
+  fallback: ["Arial", "sans-serif"],
+});
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <>
+      <main className={montserrat.className}>
+        <Component {...pageProps} />
+        <GoogleTagManager gtmId="GTM-WJVZHTB" />
+      </main>
+    </>
+  );
 }
+
+export default MyApp;
