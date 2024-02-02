@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <main className={montserrat.className}>
         <Component {...pageProps} />
-        <GoogleTagManager gtmId="GTM-WJVZHTB" />
+        <GoogleTagManager gtmId="GTM-NJMQTJF" />
       </main>
     </>
   );
