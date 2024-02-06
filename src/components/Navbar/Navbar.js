@@ -137,7 +137,9 @@ const Navbar = ({ link, event, ads }) => {
           )}
 
           <Link href={actualLink}>
-            <button className="hidden max-sm:block">Start Learning</button>
+            <button className="hidden max-sm:block" id="DABCADS-SLB">
+              Start Learning
+            </button>
           </Link>
           {ads ? (
             ""
@@ -175,7 +177,7 @@ const Navbar = ({ link, event, ads }) => {
         <div className={styles.right}>
           {ads ? (
             <Link href={actualLink}>
-              <button>Start Learning</button>
+              <button id="DABCADS-SLB">Start Learning</button>
             </Link>
           ) : event ? (
             <>
@@ -205,7 +207,7 @@ const Navbar = ({ link, event, ads }) => {
                 <a href="/blog">Blog</a>
               </span>
               <Link href={actualLink}>
-                <button>Start Learning</button>
+                <button id="DABCADS-SLB">Start Learning</button>
               </Link>
             </>
           )}

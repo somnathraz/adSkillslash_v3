@@ -114,7 +114,7 @@ const Header = ({
           />
         </div>
         <div onClick={() => showVideo(true)}>
-          <button className="bg-[#f18350] px-3 py-2 mt-4">
+          <button className="bg-[#f18350] px-3 py-2 mt-4" id="DABCADS-DV">
             Watch Demo Videos
           </button>
         </div>
@@ -124,7 +124,10 @@ const Header = ({
           <div className="absolute w-[413px]  max-sm:w-[313px] h-[290px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px] left-12 min-[1440px]:left-8 max-sm:left-7 max-sm:flex max-sm:justify-center">
             <div onClick={() => showVideo(true)}>
               <Image src={imgSrc} alt="headerImg" fill priority quality={40} />
-              <MdOutlinePlayCircleOutline className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer " />
+              <MdOutlinePlayCircleOutline
+                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
+                id="DABCADS_V"
+              />
             </div>
           </div>
           <div className="flex gap-2 w-full items-center mt-[180px] max-sm:mt-[120px] max-sm:px-4">
@@ -150,7 +153,10 @@ const Header = ({
               Valid Till <b>Today</b>
             </p>
             <Link href={link}>
-              <button className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center">
+              <button
+                className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
+                id="DABCADS-SLO"
+              >
                 Start Learning
               </button>
             </Link>
