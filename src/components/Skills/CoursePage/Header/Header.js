@@ -39,6 +39,23 @@ const Header = ({
       router.push(link);
     }
   };
+
+  const [idBtnO, setIdBtnO] = useState("DABCADS-SLO");
+  const [idBtnDV, setIdBtnDV] = useState("DABCADS-DV");
+  const [idBtnV, setIdBtnV] = useState("DABCADS_V");
+  useEffect(() => {
+    if (redirectDs) {
+      setIdBtnO("DSBCADS-SLO");
+      setIdBtnDV("DSBCADS-DV");
+      setIdBtnV("DSBCADS-V");
+    }
+    if (redirectFs) {
+      setIdBtnO("DSABCADS-SLB");
+      setIdBtnDV("DSABCADS-DV");
+      setIdBtnV("DSABCADS-V");
+    }
+  }, [redirectDs, redirectFs, redirectDa]);
+
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
       {show && <VideoPlaylist setShow={showVideo} show={show} />}
@@ -114,7 +131,7 @@ const Header = ({
           />
         </div>
         <div onClick={() => showVideo(true)}>
-          <button className="bg-[#f18350] px-3 py-2 mt-4" id="DABCADS-DV">
+          <button className="bg-[#f18350] px-3 py-2 mt-4" id={idBtnDV}>
             Watch Demo Videos
           </button>
         </div>
@@ -122,11 +139,18 @@ const Header = ({
       <div className="flex flex-col gap-7 relative">
         <div className="bg-white px-11 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] absolute mt-28">
           <div className="absolute w-[413px]  max-sm:w-[313px] h-[290px] max-sm:h-[220px] top-[-120px] max-sm:top-[-100px] left-12 min-[1440px]:left-8 max-sm:left-7 max-sm:flex max-sm:justify-center">
-            <div onClick={() => showVideo(true)} id="DABCADS_V">
-              <Image src={imgSrc} alt="headerImg" fill priority quality={40} id="DABCADS_V" />
+            <div onClick={() => showVideo(true)} id={idBtnV}>
+              <Image
+                src={imgSrc}
+                alt="headerImg"
+                fill
+                priority
+                quality={40}
+                id={idBtnV}
+              />
               <MdOutlinePlayCircleOutline
                 className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
-                id="DABCADS_V"
+                id={idBtnV}
               />
             </div>
           </div>
@@ -155,7 +179,7 @@ const Header = ({
             <Link href={link}>
               <button
                 className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
-                id="DABCADS-SLO"
+                id={idBtnO}
               >
                 Start Learning
               </button>

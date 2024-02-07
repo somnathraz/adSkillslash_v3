@@ -25,7 +25,17 @@ const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
 
 //   return timeLeft;
 // };
-const Navbar = ({ link, event, ads }) => {
+const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
+  const [idBtnB, setIdBtnW] = useState("DABCADS-SLB");
+  useEffect(() => {
+    if (redirectDs) {
+      setIdBtnW("DSBCADS-SLB");
+    }
+    if (redirectFs) {
+      setIdBtnW("DSABCADS-SLB");
+    }
+  }, [redirectDs, redirectFs, redirectDa]);
+
   const [show, setShow] = useState(false);
   const [icon, setIcon] = useState(false);
   const [popups, setPopups] = useState(false);
@@ -137,7 +147,7 @@ const Navbar = ({ link, event, ads }) => {
           )}
 
           <Link href={actualLink}>
-            <button className="hidden max-sm:block" id="DABCADS-SLB">
+            <button className="hidden max-sm:block" id={idBtnB}>
               Start Learning
             </button>
           </Link>
@@ -177,7 +187,7 @@ const Navbar = ({ link, event, ads }) => {
         <div className={styles.right}>
           {ads ? (
             <Link href={actualLink}>
-              <button id="DABCADS-SLB">Start Learning</button>
+              <button id={idBtnB}>Start Learning</button>
             </Link>
           ) : event ? (
             <>
@@ -207,7 +217,7 @@ const Navbar = ({ link, event, ads }) => {
                 <a href="/blog">Blog</a>
               </span>
               <Link href={actualLink}>
-                <button id="DABCADS-SLB">Start Learning</button>
+                <button id={idBtnB}>Start Learning</button>
               </Link>
             </>
           )}
