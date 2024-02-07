@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useRouter } from "next/router";
 import Image from "next/image";
