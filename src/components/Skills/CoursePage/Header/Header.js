@@ -50,7 +50,7 @@ const Header = ({
       setIdBtnV("DSBCADS-V");
     }
     if (redirectFs) {
-      setIdBtnO("DSABCADS-SLB");
+      setIdBtnO("DSABCADS-SLO");
       setIdBtnDV("DSABCADS-DV");
       setIdBtnV("DSABCADS-V");
     }
