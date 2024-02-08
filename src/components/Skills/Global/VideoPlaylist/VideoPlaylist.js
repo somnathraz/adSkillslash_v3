@@ -2,12 +2,38 @@ import React, { useEffect, useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import TabData from "./VideoData";
 import { FaYoutube } from "react-icons/fa";
-const VideoPlaylist = ({ setShow, show }) => {
-  const [activeVideo, setActiveVideo] = useState("oGE7FWT2t5Q");
+const VideoPlaylist = ({
+  setShow,
+  show,
+  redirectDs,
+  redirectFs,
+  redirectDa,
+}) => {
+  const [changeArray, setChangeArray] = useState(0);
+  const [activeVideo, setActiveVideo] = useState(
+    TabData[changeArray].desc[0].link
+  );
+
   const handelOpen = () => {
     setShow(false);
   };
-
+  useEffect(() => {
+    if (redirectDs) {
+      console.log("ds");
+      setChangeArray(2);
+      setActiveVideo(TabData[2].desc[0].link);
+    }
+    if (redirectDa) {
+      console.log("da");
+      setChangeArray(0);
+      setActiveVideo(TabData[0].desc[0].link);
+    }
+    if (redirectFs) {
+      console.log("fs");
+      setChangeArray(1);
+      setActiveVideo(TabData[1].desc[0].link);
+    }
+  }, [redirectDs, redirectFs, redirectDa]);
   useEffect(() => {
     if (show) {
       // Add a class to disable scrolling on the body
@@ -39,7 +65,7 @@ const VideoPlaylist = ({ setShow, show }) => {
         <div className="flex flex-col overflow-y-scroll mt-8  ">
           <div className="w-full h-max flex flex-col">
             <h3 className="text-white font-bold">Sample Videos</h3>
-            {TabData[0].desc.map((data, i) => {
+            {TabData[changeArray].desc.map((data, i) => {
               const src = `https://www.youtube-nocookie.com/embed/${data.link}`;
               return (
                 <div
