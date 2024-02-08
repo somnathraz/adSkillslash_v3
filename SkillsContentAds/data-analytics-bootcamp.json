@@ -12,7 +12,7 @@
     "offerPrice": "₹ 3,999",
     "actualPrice": "₹ 7,999",
     "discount": "50%",
-    "dataScience": true,
+    "dataScience": false,
     "FullStack": false,
     "dataAnalytics": true,
     "certification": "3",
