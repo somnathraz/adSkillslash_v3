@@ -2,15 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./WhatsAppButtons.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 const WhatsappButton = ({ redirectDs, redirectFs, redirectDa }) => {
-  const [idBtnW, setIdBtnW] = useState("DABCADS-WA");
-  useEffect(() => {
-    if (redirectDs) {
-      setIdBtnW("DSBCADS-WA");
-    }
-    if (redirectFs) {
-      setIdBtnW("DSABCADS-WA");
-    }
-  }, [redirectDs, redirectFs, redirectDa]);
+  const [idBtnW, setIdBtnW] = useState("program-wa");
 
   return (
     <div>

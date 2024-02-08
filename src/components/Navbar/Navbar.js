@@ -26,15 +26,7 @@ const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
 //   return timeLeft;
 // };
 const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
-  const [idBtnB, setIdBtnW] = useState("DABCADS-SLB");
-  useEffect(() => {
-    if (redirectDs) {
-      setIdBtnW("DSBCADS-SLB");
-    }
-    if (redirectFs) {
-      setIdBtnW("DSABCADS-SLB");
-    }
-  }, [redirectDs, redirectFs, redirectDa]);
+  const [idBtnB, setIdBtnW] = useState("program-slb");
 
   const [show, setShow] = useState(false);
   const [icon, setIcon] = useState(false);

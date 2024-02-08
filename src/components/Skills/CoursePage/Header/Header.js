@@ -40,26 +40,9 @@ const Header = ({
     }
   };
 
-  const [idBtnO, setIdBtnO] = useState("DABCADS-SLO");
-  const [idBtnDV, setIdBtnDV] = useState("DABCADS-DV");
-  const [idBtnV, setIdBtnV] = useState("DABCADS_V");
-  useEffect(() => {
-    if (redirectDs) {
-      setIdBtnO("DSBCADS-SLO");
-      setIdBtnDV("DSBCADS-DV");
-      setIdBtnV("DSBCADS-V");
-    }
-    if (redirectFs) {
-      setIdBtnO("DSABCADS-SLO");
-      setIdBtnDV("DSABCADS-DV");
-      setIdBtnV("DSABCADS-V");
-    }
-    if (redirectDa) {
-      setIdBtnO("DABCADS-SLO");
-      setIdBtnDV("DABCADS-DV");
-      setIdBtnV("DABCADS_V");
-    }
-  }, [redirectDs, redirectFs, redirectDa]);
+  const [idBtnO, setIdBtnO] = useState("program-slo");
+  const [idBtnDV, setIdBtnDV] = useState("program-wdv");
+  const [idBtnV, setIdBtnV] = useState("program-dv");
 
   return (
     <div className="grid grid-cols-[60%,39%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[750px] bg-[#111621] w-full mt-[70px] px-28 max-sm:px-5 py-[100px] pb-[70px] max-sm:py-14 relative">
