@@ -189,6 +189,11 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
+      <BottomPrice
+        offerPrice={DataScienceCourseData.data.header.offerPrice}
+        actualPrice={DataScienceCourseData.data.header.actualPrice}
+        link={DataScienceCourseData.data.header.link}
+      />
       {/* <MiddlePopup /> */}
     </div>
   );
