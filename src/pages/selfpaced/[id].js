@@ -14,6 +14,7 @@ import DetailTable from "../../components/Skills/CoursePage/DetailTable/DetailTa
 import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../components/CTA/CTA";
+import BottomPrice from "@/components/Skills/BottomPrice/BottomPrice";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const FaqDATA = [
