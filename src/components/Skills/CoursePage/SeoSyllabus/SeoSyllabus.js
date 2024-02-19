@@ -98,7 +98,7 @@ function DataScienceSyllabus({
                                   </h4>
                                   {content.chap.desc.map((desc, i) => {
                                     return (
-                                      <div key={desc}>
+                                      <div key={desc} className="max-sm:hidden">
                                         {desc === "" ? (
                                           ""
                                         ) : (
@@ -159,12 +159,14 @@ function DataScienceSyllabus({
           >
             <div className="flex items-center justify-center">
               <Image
-                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/CoursePage/icon/chat-gif.gif"
+                src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/chat-with-us.gif"
                 width={50}
                 height={50}
               />
               <div className={styles.fContent}>
-                <p className="text-xl font-medium text-black">Chat With Us</p>
+                <p className="text-xl font-medium text-black ml-6">
+                  Chat With Us
+                </p>
               </div>
             </div>
           </Link>
