@@ -60,10 +60,6 @@ const Header = ({
             quality={40}
             id={idBtnV}
           />
-          <MdOutlinePlayCircleOutline
-            className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
-            id={idBtnV}
-          />
         </div>
       </div>
       {show && (
@@ -168,10 +164,6 @@ const Header = ({
                 fill
                 priority
                 quality={40}
-                id={idBtnV}
-              />
-              <MdOutlinePlayCircleOutline
-                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               />
             </div>
