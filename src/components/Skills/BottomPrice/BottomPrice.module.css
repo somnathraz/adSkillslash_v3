@@ -6,7 +6,6 @@
   align-items: center;
   gap: 20px;
   padding: 10px 20px;
-
   background-color: white;
   width: 100%;
   z-index: 999;
@@ -47,5 +46,10 @@
 @media (min-width: 642px) {
   .wrap {
     display: none;
+  }
+}
+@media (max-width: 320px) {
+  .ofPr {
+    font-size: 20px;
   }
 }
