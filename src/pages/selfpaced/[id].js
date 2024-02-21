@@ -14,6 +14,7 @@ import DetailTable from "../../components/Skills/CoursePage/DetailTable/DetailTa
 import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import CTA from "../../components/CTA/CTA";
+import SkillsContent from "@/components/Skills/CoursePage/SkillsContent/SkillsContent";
 import BottomPrice from "@/components/Skills/BottomPrice/BottomPrice";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
@@ -126,6 +127,10 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         secondPoint={DataScienceCourseData.data.header.secondPoint}
         thirdPoint={DataScienceCourseData.data.header.thirdPoint}
         fourthPoint={DataScienceCourseData.data.header.fourthPoint}
+      />
+      <SkillsContent
+        certification={DataScienceCourseData.data.header.certification}
+        hrs={DataScienceCourseData.data.header.hour}
       />
       <div id="certificate">
         <WhyUs
