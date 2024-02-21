@@ -3,7 +3,7 @@ import styles from "./BottomPrice.module.css";
 import Link from "next/link";
 
 const BottomPrice = ({ offerPrice, actualPrice, link }) => {
-  const [idBtnO, setIdBtnO] = useState("org-slo");
+  const [idBtnO, setIdBtnO] = useState("program-slo");
   return (
     <div className={styles.wrap}>
       <div className={styles.left}>
