@@ -9,9 +9,9 @@ import {
   MdOutlineWorkHistory,
   MdLockOpen,
   MdOutlineBroadcastOnHome,
+  MdOutlinePlayCircleOutline,
 } from "react-icons/md";
-import { FaMedal } from "react-icons/fa";
-
+import { LiaUserAstronautSolid } from "react-icons/lia";
 import { BsBroadcast } from "react-icons/bs";
 import { PiCertificateBold, PiMedal } from "react-icons/pi";
 import VideoPlaylist from "../../Global/VideoPlaylist/VideoPlaylist";
@@ -35,7 +35,6 @@ const Header = ({
     setShow(data);
   };
   const [idBtnO, setIdBtnO] = useState("org-slo");
-  const [idBtnDV, setIdBtnDV] = useState("org-wdv");
   const [idBtnV, setIdBtnV] = useState("org-dv");
 
   return (
@@ -59,6 +58,10 @@ const Header = ({
             fill
             priority
             quality={40}
+            id={idBtnV}
+          />
+          <MdOutlinePlayCircleOutline
+            className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
             id={idBtnV}
           />
         </div>
@@ -143,29 +146,29 @@ const Header = ({
           {desc}
         </p>
         <div className="min-[642px]:hidden text-white flex flex-col gap-2 mt-3">
-          <p className="text-2xl text-white font-semibold max-[361px]:text-[20px]">
+          <p className="text-[20px] text-white font-semibold max-[361px]:text-[19px]">
             {hrs} hrs recorded sessions with
           </p>
+          {redirectFs ? (
+            <p className="text-white flex gap-2 item-center ml-3">
+              <LiaUserAstronautSolid className="text-[20px]" />
+              FAANG Instructors
+            </p>
+          ) : (
+            <p className="text-white flex gap-2 item-center ml-3">
+              <PiMedal className="text-[20px]" />
+              Microsoft Certifications
+            </p>
+          )}
+
           <p className="text-white flex gap-2 item-center ml-3">
             <BsBroadcast className="text-[20px]" /> Live Doubt Sessions
           </p>
           <p className="text-white flex gap-2 item-center ml-3">
-            <PiMedal className="text-[20px]" />
-            Microsoft certifications
-          </p>
-          <p className="text-white flex gap-2 item-center ml-3">
             <MdOutlineBroadcastOnHome className="text-[20px]" />
-            Live project sessions
+            Live Project Sessions
           </p>
         </div>
-        {/* <div onClick={() => showVideo(true)}>
-          <button
-            className="bg-[#f18350] px-3 py-2 mt-4 max-sm:hidden"
-            id={idBtnDV}
-          >
-            Watch Demo Videos
-          </button>
-        </div> */}
       </div>
       <div className="flex flex-col gap-7 relative w-full items-end justify-end">
         <div className="bg-white top-0 px-11 max-[1024px]:px-5 py-3 max-sm:px-0 rounded shadow flex flex-col w-full z-[1] max-sm:hidden absolute mt-28 max-[741px]:w-[52%] max-[741px]:top-0 max-[741px]:right-[-15px]">
@@ -177,6 +180,10 @@ const Header = ({
                 fill
                 priority
                 quality={40}
+                id={idBtnV}
+              />
+              <MdOutlinePlayCircleOutline
+                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               />
             </div>
