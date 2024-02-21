@@ -34,8 +34,8 @@ const Header = ({
   const showVideo = (data) => {
     setShow(data);
   };
-  const [idBtnO, setIdBtnO] = useState("org-slo");
-  const [idBtnV, setIdBtnV] = useState("org-dv");
+  const [idBtnO, setIdBtnO] = useState("program-slo");
+  const [idBtnV, setIdBtnV] = useState("program-dv");
 
   return (
     <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-6 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-0 py-[100px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
@@ -146,7 +146,7 @@ const Header = ({
           {desc}
         </p>
         <div className="min-[642px]:hidden text-white flex flex-col gap-2 mt-3">
-          <p className="text-[20px] text-white font-semibold max-[361px]:text-[19px]">
+          <p className="text-[20px] text-white font-semibold max-[361px]:text-[19px] max-[320px]:text-[16px]">
             {hrs} hrs recorded sessions with
           </p>
           {redirectFs ? (

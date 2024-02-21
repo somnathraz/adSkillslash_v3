@@ -26,7 +26,7 @@ const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
 //   return timeLeft;
 // };
 const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
-  const [idBtnB, setIdBtnW] = useState("org-slb");
+  const [idBtnB, setIdBtnW] = useState("program-slb");
 
   const [show, setShow] = useState(false);
   const [icon, setIcon] = useState(false);
