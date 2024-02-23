@@ -188,7 +188,10 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         />
       </div>
       <div id="faq">
-        <FAQ heading="Frequently Asked Questions" FaqData={FaqDATA} />
+        <FAQ
+          heading="Frequently Asked Questions"
+          FaqData={DataScienceCourseData.data.FaqDATA}
+        />
       </div>
       <WhatsappButton
         redirectDs={DataScienceCourseData.data.header.dataScience}
