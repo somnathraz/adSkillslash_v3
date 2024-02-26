@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./WhatsAppButtons.module.css";
 import { FaWhatsapp } from "react-icons/fa";
-const WhatsappButton = ({ redirectDs, redirectFs, redirectDa }) => {
+const WhatsappButton = () => {
   const [idBtnW, setIdBtnW] = useState("program-wa");
 
   return (
