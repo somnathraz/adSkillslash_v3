@@ -63,6 +63,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
 
     fetchLocation();
   }, []);
+
   return (
     <div>
       <Head>
@@ -88,6 +89,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         certification={DataScienceCourseData.data.header.certification}
         offerPrice={offerPrice}
         actualPrice={actualPrice}
+        checkoutLink={DataScienceCourseData.data.header.checkoutLink}
         discount={DataScienceCourseData.data.header.discount}
         link={DataScienceCourseData.data.header.link}
         redirectDs={DataScienceCourseData.data.header.dataScience}
@@ -171,6 +173,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
       <BottomPrice
+        checkoutLink={DataScienceCourseData.data.header.checkoutLink}
         offerPrice={offerPrice}
         actualPrice={actualPrice}
         link={DataScienceCourseData.data.header.link}

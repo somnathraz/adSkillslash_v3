@@ -26,6 +26,7 @@ const Header = ({
   actualPrice,
   discount,
   link,
+  checkoutLink,
   redirectDs,
   redirectFs,
   redirectDa,
@@ -210,12 +211,12 @@ const Header = ({
               <MdOutlineAccessAlarms />
               <b> &nbsp;6 hours left at </b>this prices
             </p>
-            <Link href={link}>
+            <Link href={checkoutLink}>
               <button
                 className="w-full px-4 bg-[#f18350] text-white rounded py-3 font-bold text-xl flex justify-center items-center"
                 id={idBtnO}
               >
-                Start Learning
+                Buy Now
               </button>
             </Link>
           </div>
