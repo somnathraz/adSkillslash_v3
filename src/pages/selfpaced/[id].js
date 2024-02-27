@@ -174,35 +174,34 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const DataScienceCourseData = getPostData(params.id);
-  const fetchLocation = async () => {
-    try {
-      const response = await fetch(
-        "https://ipinfo.io/json?token=0fac06a7890a4e"
-      );
-      if (response.status === 429) {
-        throw new Error("Rate limit exceeded. Too many requests.");
-      }
-      if (!response.ok) {
-        throw new Error(
-          `Failed to fetch location: ${response.status} ${response.statusText}`
-        );
-      }
-      const data = await response.json();
+  // const fetchLocation = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       "https://ipinfo.io/json?token=0fac06a7890a4e"
+  //     );
+  //     if (response.status === 429) {
+  //       throw new Error("Rate limit exceeded. Too many requests.");
+  //     }
+  //     if (!response.ok) {
+  //       throw new Error(
+  //         `Failed to fetch location: ${response.status} ${response.statusText}`
+  //       );
+  //     }
+  //     const data = await response.json();
 
-      const { country } = data;
+  //     const { country } = data;
 
-      return country;
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  //     return country;
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
-  const country = await fetchLocation();
-  console.log(country, "before");
+  // const country = await fetchLocation();
+  // console.log(country, "before");
   return {
     props: {
       DataScienceCourseData,
-      country,
     },
   };
 }
