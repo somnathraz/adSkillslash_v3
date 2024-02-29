@@ -11,6 +11,7 @@ import {
   MdOutlineBroadcastOnHome,
   MdOutlinePlayCircleOutline,
 } from "react-icons/md";
+import ButtonWaveAnimation from "@/components/Animation/ButtonWaveAnimmation/ButtonWaveAnimmation";
 import { LiaUserAstronautSolid } from "react-icons/lia";
 import { BsBroadcast } from "react-icons/bs";
 import { PiCertificateBold, PiMedal } from "react-icons/pi";
@@ -51,7 +52,7 @@ const Header = ({
         {/* <MdKeyboardArrowRight className="text-[white]" />
           <p>Data Science</p> */}
       </div>
-      <div className="w-[100%]  max-[361px]:h-[250px]  h-[310px] relative flex justify-center min-[482px]:hidden ">
+      <div className="w-[100%]  max-[361px]:h-[250px]  h-[310px] relative flex justify-center min-[500px]:hidden ">
         <div onClick={() => showVideo(true)} id={idBtnV}>
           <Image
             src={imgSrc}
@@ -61,7 +62,12 @@ const Header = ({
             quality={40}
             id={idBtnV}
           />
-          <MdOutlinePlayCircleOutline
+          {/* <MdOutlinePlayCircleOutline
+            className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
+            id={idBtnV}
+          />
+           */}
+          <ButtonWaveAnimation
             className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
             id={idBtnV}
           />
@@ -183,7 +189,11 @@ const Header = ({
                 quality={40}
                 id={idBtnV}
               />
-              <MdOutlinePlayCircleOutline
+              {/* <MdOutlinePlayCircleOutline
+                className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
+                id={idBtnV}
+              /> */}
+              <ButtonWaveAnimation
                 className="absolute z-10 text-7xl text-white left-[42%] top-[41%] cursor-pointer "
                 id={idBtnV}
               />
