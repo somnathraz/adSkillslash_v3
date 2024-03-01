@@ -40,7 +40,7 @@ const Header = ({
   const [idBtnV, setIdBtnV] = useState("program-dv");
 
   return (
-    <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-4 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-0 py-[50px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
+    <div className="grid grid-cols-[60%,39%] max-[741px]:flex max-[741px]:flex-col max-[901px]:grid-cols-[55%,44%] max-sm:flex max-sm:flex-col gap-5 max-sm:mb-[10px] bg-[#111621] w-full mt-[40px] max-sm:mt-[60px] max-sm:pt-4 min-[1600px]:mt-[70px] px-28 max-[1024px]:px-10 min-[1600px]:px-48 max-sm:px-0 py-[60px] min-[1600px]:py-[90px] pb-[70px] max-sm:pb-[30px] max-sm:py-4 relative">
       <div className="flex gap-3 text-[#F18350] font-bold items-center max-sm:mb-[-8px] min-[482px]:hidden">
         <p className="text-[#F18350] font-semibold min-[1600px]:text-[20px] max-sm:text-[15px] max-sm:font-medium max-sm:px-2">
           Self-Paced
