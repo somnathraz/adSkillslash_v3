@@ -22,7 +22,7 @@ function YourComponent() {
   });
   return (
     <div
-      className="h-[1800px] max-sm:h-[2320px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
+      className="h-[1800px] max-sm:h-[2320px] max-[376px]:h-[2500px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
       ref={ref}
     >
       <h2 className="text-[#FDDACE] text-8xl max-sm:text-3xl font-bold uppercase text-left ml-7 max-sm:ml-0 max-sm:text-center">
