@@ -17,7 +17,7 @@ const DetailTable = ({
         Skill<span style={{ borderBottom: "1px solid white" }}>slash Boo</span>
         tcamp
       </h2>
-      <div className="border-[1px] border-[#ffffff] max-sm:border-[0px] rounded-lg gridBox grid  grid-cols-[35%,16%,16%,16%] grid-col max-[1281px]:gird-cols-[35%,17%,17%,19%]  max-[801px]:gap-[20px] gap-[44px] px-5 py-5 justify-center max-sm:w-max max-sm:overflow-scroll ">
+      <div className="border-[1px] border-[#ffffff] max-sm:border-[0px] rounded-lg  grid  grid-cols-[35%,16%,16%,16%] grid-col max-[1281px]:gird-cols-[35%,17%,17%,19%] grid-col max-[801px]:gap-[20px] gap-[44px] px-5 py-5 justify-center max-sm:w-max max-sm:overflow-scroll ">
         <div
           className={`flex flex-col ${
             redirectDs ? "gap-[13px]" : "gap-[14px]"

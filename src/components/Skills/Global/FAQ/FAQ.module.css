@@ -130,11 +130,10 @@
     margin-bottom: 20px;
   }
   .FAQ {
-    margin: 00px 10px 0px 0px;
+    margin: -20px 10px 80px 0px;
     justify-content: center;
     padding-bottom: 0px;
     padding-top: 0;
-    margin-top: -20px;
   }
   .ques {
     padding: 10px 30px;

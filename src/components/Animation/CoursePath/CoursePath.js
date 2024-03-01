@@ -22,7 +22,7 @@ function YourComponent() {
   });
   return (
     <div
-      className="h-[1800px] max-sm:h-[2320px] max-[376px]:h-[2500px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
+      className="h-[1800px] max-sm:h-[2320px] max-[376px]:h-[2300px] px-28 py-10 bg-[#fff7f3] flex flex-col max-sm:px-5 max-sm:py-5"
       ref={ref}
     >
       <h2 className="text-[#FDDACE] text-8xl max-sm:text-3xl font-bold uppercase text-left ml-7 max-sm:ml-0 max-sm:text-center">
@@ -64,7 +64,7 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[180px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-10 max-sm:mt-16 w-[85%] max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[180px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-10 max-sm:mt-16 w-[85%] max-sm:w-[100%] max-sm:px-8">
           {/* <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Professionals
           </div> */}
@@ -171,7 +171,7 @@ function YourComponent() {
             fill="white"
           />
         </motion.svg>
-        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[180px] pb-14 max-sm:pb-10 z-40 relative ml-56 max-sm:ml-0 mt-32  w-[85%] flex items-end justify-end max-sm:justify-start max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[180px] pb-14 max-sm:pb-10 z-40 relative ml-56 max-sm:ml-0 mt-32  w-[85%] flex items-end justify-end max-sm:justify-start max-sm:px-8 max-sm:w-[100%]">
           {/* <div className="absolute bg-[#EEEBFF] top-10 max-sm:top-[160px] right-0 font-medium px-4 py-1 rounded-l-2xl">
             For Non-Tech Professionals
           </div> */}
@@ -299,7 +299,7 @@ function YourComponent() {
           alt="data analytics"
         />
 
-        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[180px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-32 max-sm:mt-32 w-[85%] max-sm:w-[100%]">
+        <div className="bg-white shadow rounded-2xl px-14 pt-14 max-sm:pt-[180px] pb-14 max-sm:pb-10 z-40 relative ml-48 max-sm:ml-0 mt-32 max-sm:mt-32 w-[85%] max-sm:w-[100%] max-sm:px-8">
           {/* <div className="absolute bg-[#EEEBFF] top-10  max-sm:top-[160px] left-0 font-medium px-4 py-1 rounded-r-2xl">
             For Programmers
           </div> */}

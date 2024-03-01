@@ -77,7 +77,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
               showMenu();
               setIcon(false);
             }}*/}
-
+          {/* 
           {!show ? (
             <FaBars
               className={styles.ham}
@@ -97,8 +97,8 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
             >
               ⨯
             </p>
-          )}
-
+          )} */}
+          {/* 
           <div className={show ? styles.mobileWrapper : styles.hide}>
             <div className={styles.mobileMenu}>
               <span onClick={showMenu}>
@@ -116,7 +116,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
                 <a href="/blog">Blogs</a>
               </span>
             </div>
-          </div>
+          </div> */}
           {ads ? (
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/Skillslash-logo.webp"

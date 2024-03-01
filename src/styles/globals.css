@@ -626,6 +626,9 @@ button {
   .wrapperHeading h4 {
     font-size: 24px;
   }
+  .grid-col {
+    grid-template-columns: 43% 16% 16% 19%;
+  }
 }
 @media (max-width: 641px) {
   h4,
