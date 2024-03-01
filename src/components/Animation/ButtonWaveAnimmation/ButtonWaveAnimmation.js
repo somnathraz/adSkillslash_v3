@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styles from "./ButtonWaveAnimation.module.css";
 
-const ButtonWaveAnimation = () => {
+const ButtonWaveAnimation = ({ id }) => {
   return (
-    <div className={styles.playButton}>
-      <div className={styles.playIcon} />
-      <div className={styles.waves} />
+    <div className={styles.playButton} id={id}>
+      <div className={styles.playIcon} id={id} />
+      <div className={styles.waves} id={id} />
     </div>
   );
 };
