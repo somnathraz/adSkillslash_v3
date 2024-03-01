@@ -3,7 +3,7 @@ import DataScienceSyllabus from "../../components/Skills/CoursePage/SeoSyllabus/
 import Navbar from "../../components/Navbar/Navbar";
 import ProjectSlider from "../../components/Skills/Global/Project/ProjectSlider";
 import Head from "next/head";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { getAllPostIds, getPostData } from "../../lib/newPagesAds";
 import FAQ from "../../components/Skills/Global/FAQ/FAQ";
 import WhyUsAnimate from "../../components/Skills/CoursePage/WhyUsAnimate/WhyUsAnimate";
@@ -13,7 +13,6 @@ import Reviews from "../../components/Review/Reviews";
 import DetailTable from "../../components/Skills/CoursePage/DetailTable/DetailTable";
 import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
-import CTA from "../../components/CTA/CTA";
 import SkillsContent from "@/components/Skills/CoursePage/SkillsContent/SkillsContent";
 import BottomPrice from "@/components/Skills/BottomPrice/BottomPrice";
 
@@ -118,8 +117,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         liveHr={DataScienceCourseData.data.header.liveHr}
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
-      <CTA />
+
       <div id="modules">
         <DataScienceSyllabus
           title={DataScienceCourseData.data.header.title}
