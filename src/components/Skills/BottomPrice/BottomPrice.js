@@ -15,7 +15,7 @@ const BottomPrice = ({ offerPrice, actualPrice, link, checkoutLink }) => {
           <button id={idBtnO}>Buy Now</button>
         </Link>
       </div>
-      <p className={styles.refund}>15 Days refundable**</p>
+      <p className={styles.refund}>15-Days Money-Back Guarantee</p>
     </div>
   );
 };
