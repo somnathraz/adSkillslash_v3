@@ -13,6 +13,7 @@ const BottomPrice = ({
   redirectFs,
   redirectDa,
   changeHeading,
+  newDataScience,
 }) => {
   const [idBtnO, setIdBtnO] = useState("program-slo");
   const [popups, setPopups] = useState(false);
@@ -43,12 +44,18 @@ const BottomPrice = ({
       </Popup>
       <div className={styles.left}>
         <p className={styles.ofPr}>{offerPrice}</p>
-        {/* <p className={styles.acPr}>{actualPrice}</p> */}
+        {newDataScience && <p className={styles.acPr}>{actualPrice}</p>}
       </div>
       <div className={styles.right} id={idBtnO}>
-        <button id={idBtnO} onClick={() => popupShow()}>
-          Free Counselling
-        </button>
+        {newDataScience ? (
+          <Link href={checkoutLink} id={idBtnO}>
+            <button id={idBtnO}>Buy Now</button>
+          </Link>
+        ) : (
+          <button id={idBtnO} onClick={() => popupShow()}>
+            Free Counselling
+          </button>
+        )}
       </div>
       <p className={styles.refund}>15-Days Money-Back Guarantee</p>
     </div>

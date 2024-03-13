@@ -60,6 +60,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
       <Header
+        newDataScience={DataScienceCourseData.data.header.newDataScience}
         title={DataScienceCourseData.data.header.title}
         desc={DataScienceCourseData.data.header.desc}
         redirectFs={DataScienceCourseData.data.header.FullStack}
@@ -91,6 +92,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         offerPrice={offerPrice}
         actualPrice={actualPrice}
+        newDataScience={DataScienceCourseData.data.header.newDataScience}
       />
       <div id="certificate">
         <WhyUs
@@ -127,7 +129,17 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
-
+      <div id="modules">
+        <DataScienceSyllabus
+          NigeriaForm={showNigeriaForm}
+          title={DataScienceCourseData.data.header.title}
+          seoSyllabus={DataScienceCourseData.data.seoSyllabus}
+          heading="Course Modules"
+          hour={DataScienceCourseData.data.header.hour}
+          redirectFs={DataScienceCourseData.data.header.FullStack}
+          redirectDs={DataScienceCourseData.data.header.dataScience}
+        />
+      </div>
       {/* <WhyUsAnimate /> */}
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
       <div id="projects">
@@ -154,6 +166,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         checkoutLink={DataScienceCourseData.data.header.checkoutLink}
         offerPrice={offerPrice}
         actualPrice={actualPrice}
+        newDataScience={DataScienceCourseData.data.header.newDataScience}
         redirectDs={DataScienceCourseData.data.header.dataScience}
         redirectFs={DataScienceCourseData.data.header.FullStack}
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
