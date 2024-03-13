@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import styles from "./Navbar.module.css";
-import { MdOutlineAccessAlarms } from "react-icons/md";
+import VideoPlaylist from "../Skills/Global/VideoPlaylist/VideoPlaylist";
 import Link from "next/link";
-import { FaBars } from "react-icons/fa";
+
 import dynamic from "next/dynamic";
 const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
 // import CountDownTimer from "../CountdownTimer/CountdownTimer";
@@ -33,6 +33,10 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
   const [icon, setIcon] = useState(false);
   const [popups, setPopups] = useState(false);
   const [mobile, setMobile] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
+  const showVideoF = (data) => {
+    setShowVideo(data);
+  };
   const actualLink =
     link === undefined ? "https://courses.skillslash.com/learn" : link;
   useEffect(() => {
@@ -70,6 +74,15 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
   return (
     <div>
       <nav className={styles.nav}>
+        {showVideo && (
+          <VideoPlaylist
+            setShow={showVideoF}
+            show={show}
+            redirectDs={redirectDs}
+            redirectFs={redirectFs}
+            redirectDa={redirectDa}
+          />
+        )}
         <div className={styles.left}>
           {/*<FaBars
             className={styles.ham}
@@ -139,11 +152,14 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
             </a>
           )}
 
-          <Link href={actualLink}>
-            <button className={styles.mLearn} id={idBtnB}>
-              Start Learning
-            </button>
-          </Link>
+          <button
+            className={styles.mLearn}
+            id={idBtnB}
+            onClick={() => showVideoF(true)}
+          >
+            Watch Demo
+          </button>
+
           {ads ? (
             ""
           ) : (
@@ -179,9 +195,9 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
         </div>
         <div className={styles.right}>
           {ads ? (
-            <Link href={actualLink}>
-              <button id={idBtnB}>Start Learning</button>
-            </Link>
+            <button id={idBtnB} onClick={() => showVideoF(true)}>
+              Watch Demo
+            </button>
           ) : event ? (
             <>
               <span>

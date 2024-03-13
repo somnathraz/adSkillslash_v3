@@ -80,10 +80,17 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         secondPoint={DataScienceCourseData.data.header.secondPoint}
         thirdPoint={DataScienceCourseData.data.header.thirdPoint}
         fourthPoint={DataScienceCourseData.data.header.fourthPoint}
+        offerPrice={offerPrice}
+        actualPrice={actualPrice}
       />
       <SkillsContent
         certification={DataScienceCourseData.data.header.certification}
         hrs={DataScienceCourseData.data.header.hour}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+        offerPrice={offerPrice}
+        actualPrice={actualPrice}
       />
       <div id="certificate">
         <WhyUs
@@ -91,13 +98,14 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         />
       </div>
-      <div id="certificate">
+
+      {/* <div id="certificate">
         <WhyUsAnimate
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
           redirectDs={DataScienceCourseData.data.header.dataScience}
           redirectFs={DataScienceCourseData.data.header.FullStack}
         />
-      </div>
+      </div> */}
       {DataScienceCourseData.data.header.FullStack ? (
         ""
       ) : (
@@ -120,16 +128,6 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         redirectDa={DataScienceCourseData.data.header.dataAnalytics}
       />
 
-      <div id="modules">
-        <DataScienceSyllabus
-          title={DataScienceCourseData.data.header.title}
-          seoSyllabus={DataScienceCourseData.data.seoSyllabus}
-          heading="Course Modules"
-          hour={DataScienceCourseData.data.header.hour}
-          redirectFs={DataScienceCourseData.data.header.FullStack}
-          redirectDs={DataScienceCourseData.data.header.dataScience}
-        />
-      </div>
       {/* <WhyUsAnimate /> */}
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
       <div id="projects">
@@ -156,6 +154,9 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         checkoutLink={DataScienceCourseData.data.header.checkoutLink}
         offerPrice={offerPrice}
         actualPrice={actualPrice}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         link={DataScienceCourseData.data.header.link}
       />
       {/* <MiddlePopup /> */}

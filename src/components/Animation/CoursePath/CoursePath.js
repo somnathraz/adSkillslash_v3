@@ -114,10 +114,10 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹5,999{" "}
-                  <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
+                  ₹9,999{" "}
+                  {/* <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
                     ₹11,999
-                  </span>
+                  </span> */}
                 </p>
               </div>
               <Link href="/selfpaced/data-science-&-aI-bootcamp">
@@ -221,10 +221,10 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹4,999{" "}
-                  <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
+                  ₹7,999{" "}
+                  {/* <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
                     ₹7,999
-                  </span>
+                  </span> */}
                 </p>
               </div>
               <Link href="/selfpaced/data-analytics-bootcamp">
@@ -350,10 +350,10 @@ function YourComponent() {
             <div className="flex max-sm:flex-col gap-5 max-sm:gap-3 items-center max-sm:items-start">
               <div>
                 <p className="font-semibold flex gap-4 items-center text-[#f18350] text-2xl mt-4 max-sm:mt-3">
-                  ₹4,999
-                  <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
+                  ₹7,999
+                  {/* <span className=" text-[#4D4D4D] line-through text-lg max-sm:text-[16px] max-sm:font-">
                     ₹7,999
-                  </span>
+                  </span> */}
                 </p>
               </div>
               <Link href="/selfpaced/dsa-system-design-bootcamp">
