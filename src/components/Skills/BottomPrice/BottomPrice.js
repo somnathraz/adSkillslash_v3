@@ -44,7 +44,7 @@ const BottomPrice = ({
       </Popup>
       <div className={styles.left}>
         <p className={styles.ofPr}>{offerPrice}</p>
-        {newDataScience && <p className={styles.acPr}>{actualPrice}</p>}
+        {/* {newDataScience && <p className={styles.acPr}>{actualPrice}</p>} */}
       </div>
       <div className={styles.right} id={idBtnO}>
         {newDataScience ? (
