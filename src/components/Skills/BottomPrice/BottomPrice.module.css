@@ -11,7 +11,6 @@
   z-index: 999;
 }
 .left {
-  margin-bottom: 15px;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -25,9 +24,7 @@
 .acPr {
   text-decoration: line-through;
 }
-.right {
-  margin-bottom: 15px;
-}
+
 .right button {
   width: 100%;
   display: flex;

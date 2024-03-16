@@ -57,7 +57,6 @@ const BottomPrice = ({
           </button>
         )}
       </div>
-      <p className={styles.refund}>15-Days Money-Back Guarantee</p>
     </div>
   );
 };

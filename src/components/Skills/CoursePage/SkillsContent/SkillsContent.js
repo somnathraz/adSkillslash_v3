@@ -48,23 +48,25 @@ const SkillsContent = ({
           />
         </div>
       </Popup>
-      <div className="flex flex-col gap-2 py-4 px-5 bg-[#efefff] mx-4 shadow ">
-        <h3 className="text-xl font-bold px-5 py-1">Course Content</h3>
-        <hr />
+      <div className="flex flex-col gap-[2px] py-4 px-5 bg-[#fff9f7] mx-4  rounded-2xl border-[1px] border-solid border-[#f18350]">
+        <h3 className="text-xl font-bold text-left py-1 w-max">
+          Course Content
+        </h3>
+        <hr className="border-b-4 border-b-[#f18350] rounded-2xl w-[130px]" />
         <div className="flex flex-col gap-2 px-7 max-[741px]:px-3">
           <p className="flex gap-2 items-center justify-between py-2">
             <span className="flex gap-2 items-center">
-              <MdOutlineVideocam className="text-xl" />
-              Video Lessons
+              <MdOutlineVideocam className="text-2xl text-[#f18350]" />
+              Course Mode
             </span>
             <span>
-              <b>{hrs} Hrs</b>
+              <b>Blended</b>
             </span>
           </p>
           <hr />
           <p className="flex gap-2 items-center justify-between py-2">
             <span className="flex gap-2 items-center">
-              <MdLiveTv className="text-xl" />
+              <MdLiveTv className="text-2xl text-[#f18350]" />
               Live Doubt Session
             </span>
             <span>
@@ -74,7 +76,7 @@ const SkillsContent = ({
           <hr />
           <p className="flex gap-2 items-center justify-between py-2">
             <span className="flex gap-2 items-center">
-              <MdLiveTv className="text-xl" />
+              <MdLiveTv className="text-2xl text-[#f18350]" />
               Live Project Sessions
             </span>
             <span>
@@ -84,7 +86,7 @@ const SkillsContent = ({
           <hr />
           <p className="flex gap-2 items-center justify-between py-2">
             <span className="flex gap-2 items-center">
-              <MdOutlineWorkHistory className="text-xl" />
+              <MdOutlineWorkHistory className="text-2xl text-[#f18350]" />
               Career Support
             </span>
             <span>
@@ -94,7 +96,7 @@ const SkillsContent = ({
           <hr />
           <p className="flex gap-2 items-center justify-between py-2">
             <span className="flex gap-2 items-center">
-              <MdLockOpen className="text-xl" />
+              <MdLockOpen className="text-2xl text-[#f18350]" />
               Course Access
             </span>
             <span>
@@ -104,7 +106,7 @@ const SkillsContent = ({
           <hr />
           <p className="flex gap-2 items-center justify-between py-2">
             <span className="flex gap-2 items-center">
-              <PiCertificateBold className="text-xl" />
+              <PiCertificateBold className="text-2xl text-[#f18350]" />
               Certifications
             </span>
             <span>
