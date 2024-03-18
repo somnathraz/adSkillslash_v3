@@ -15,6 +15,8 @@ import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import SkillsContent from "@/components/Skills/CoursePage/SkillsContent/SkillsContent";
 import BottomPrice from "@/components/Skills/BottomPrice/BottomPrice";
+import PricingSection from "@/components/Skills/CoursePage/PricingSection/PricingSection";
+import ToolsCovered from "@/components/Skills/CoursePage/ToolsCovered/ToolsCovered";
 
 const DataSciencePage = ({ DataScienceCourseData }) => {
   const [showNigeriaForm, setShowNigeriaForm] = useState(false);
@@ -94,6 +96,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         actualPrice={actualPrice}
         newDataScience={DataScienceCourseData.data.header.newDataScience}
       />
+      <PricingSection />
       <div id="certificate">
         <WhyUs
           redirectDs={DataScienceCourseData.data.header.dataScience}
@@ -140,6 +143,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectDs={DataScienceCourseData.data.header.dataScience}
         />
       </div>
+      <ToolsCovered />
       {/* <WhyUsAnimate /> */}
       {/* <CourseDetails hour={DataScienceCourseData.data.header.hour} /> */}
       <div id="projects">
