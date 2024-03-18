@@ -57,7 +57,11 @@
   font-weight: 600;
   color: black;
 }
-
+@media (max-width: 320px) {
+  .priceWrap {
+    grid-template-columns: 70% 70% 70%;
+  }
+}
 @media (min-width: 641px) {
   .priceWrap {
     display: none;

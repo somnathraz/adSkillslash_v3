@@ -1,7 +1,9 @@
 .Syllabus {
   display: grid;
   grid-template-columns: 70% 30%;
-  margin: 80px 100px 100px 100px;
+  margin-top: 60px;
+  padding: 10px 100px 100px 100px;
+  background-color: #000;
 }
 .syllabusLeft ul {
   margin: 0;
@@ -238,7 +240,7 @@
 
 .ans {
   margin: 0px;
-  padding: 7px 20px;
+  padding: 7px 40px;
 }
 .accorDHead {
   font-size: 16px;
@@ -282,7 +284,7 @@
   margin-bottom: 10px;
   padding-bottom: 0;
   background-color: #fff9f6;
-  border: 1px solid #f18350;
+  border: 1px solid white;
   border-radius: 10px;
 }
 
@@ -291,7 +293,8 @@
   position: -webkit-sticky;
   top: 80px;
   gap: 15px;
-  background-color: #f9f8ff;
+  border-radius: 16px;
+  background-color: #fafafa;
   margin: 0px 10px;
   padding: 20px;
   display: flex;
@@ -340,10 +343,15 @@
   color: #6f6f6f;
 }
 .check {
-  color: #01c705;
-  font-size: 22px;
+  color: #5eb623;
+  font-size: 16px;
+  margin-top: 5px;
 }
+
 .chapHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 16px;
   margin: 20px 0px;
 }
@@ -466,30 +474,38 @@
   .Syllabus {
     display: flex;
     flex-flow: column-reverse;
-    margin: 50px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
+    margin: 0;
     gap: 20px;
+    background-color: #000;
   }
 
   .chapHead {
+    display: grid;
+    grid-template-columns: 8% 90%;
+    gap: 5px;
+    line-height: 24px;
+    align-items: flex-start;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 600;
     margin: 3px 0;
   }
   .Syllabusbutton {
-    flex-flow: column;
-    margin-bottom: 0;
+    margin-bottom: 10;
   }
   .projectSyllabus button {
     padding: 5px 10px;
     font-size: 12px;
   }
   .syllabusLeft {
-    margin: 0px;
+    margin: 10px 0;
+
     position: inherit;
   }
   .syllabusLeft h2 {
     font-size: 32px;
     font-weight: bold;
+    margin-bottom: 0;
   }
   .line {
     margin-top: 15px;
@@ -540,10 +556,12 @@
     margin-bottom: 10px;
     padding-bottom: 0;
     background-color: #fff9f6;
-    border: 1px solid #f18350;
+    border: 0;
     border-radius: 10px;
   }
-
+  .quesO {
+    border-bottom: 1px solid #000;
+  }
   .syllabusRight {
     margin: 0;
     margin-top: -50px;

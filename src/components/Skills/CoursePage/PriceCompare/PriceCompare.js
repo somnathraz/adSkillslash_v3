@@ -3,7 +3,7 @@ import styles from "./PriceCompare.module.css";
 import { FaCircleCheck } from "react-icons/fa6";
 import { MdOutlineClear } from "react-icons/md";
 
-const PriceCompare = () => {
+const PriceCompare = ({ redirectDa, hrs, redirectDs, otherHr, liveHr }) => {
   return (
     <>
       <h2 className={styles.heading}>Skillslash Bootcamp</h2>
@@ -19,36 +19,40 @@ const PriceCompare = () => {
             </div>
             <div className={styles.priceRow}>
               <p>Duration</p>
-              <p>228+ Hrs</p>
+              <p>{hrs} Hrs</p>
             </div>
             <div className={styles.priceRow}>
               <p>Live Projects</p>
-              <p>30+</p>
+              <p>{redirectDa ? "18" : "30"}</p>
             </div>
-            <div className={styles.priceRow}>
-              <p>Microsoft Course Certificate</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
-            <div className={styles.priceRow}>
-              <p>Project Experience Certificate</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
-            <div className={styles.priceRow}>
-              <p>Internship Certificate</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
-            <div className={styles.priceRow}>
-              <p>Final Year Project Assistance</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
+            {redirectDs && (
+              <>
+                <div className={styles.priceRow}>
+                  <p>Microsoft Course Certificate</p>
+                  <p>
+                    <FaCircleCheck className="text-[#12c168] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Project Experience Certificate</p>
+                  <p>
+                    <FaCircleCheck className="text-[#12c168] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Internship Certificate</p>
+                  <p>
+                    <FaCircleCheck className="text-[#12c168] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Final Year Project Assistance</p>
+                  <p>
+                    <FaCircleCheck className="text-[#12c168] " />
+                  </p>
+                </div>
+              </>
+            )}
             <div className={styles.priceRow}>
               <p>Career Support</p>
               <p>
@@ -72,45 +76,50 @@ const PriceCompare = () => {
             </div>
             <div className={styles.priceRow}>
               <p>Duration</p>
-              <p>228+ Hrs</p>
+              <p>{otherHr} Hrs</p>
             </div>
             <div className={styles.priceRow}>
               <p>Live Projects</p>
               <p>30+</p>
             </div>
-            <div className={styles.priceRow}>
-              <p>Microsoft Course Certificate</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
-            <div className={styles.priceRow}>
-              <p>Project Experience Certificate</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
-            <div className={styles.priceRow}>
-              <p>Internship Certificate</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
-            <div className={styles.priceRow}>
-              <p>Final Year Project Assistance</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
+            {redirectDs && (
+              <>
+                <div className={styles.priceRow}>
+                  <p>Microsoft Course Certificate</p>
+                  <p>
+                    <MdOutlineClear className="text-[#646464] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Project Experience Certificate</p>
+                  <p>
+                    <MdOutlineClear className="text-[#646464] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Internship Certificate</p>
+                  <p>
+                    <MdOutlineClear className="text-[#646464] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Final Year Project Assistance</p>
+                  <p>
+                    <MdOutlineClear className="text-[#646464] " />
+                  </p>
+                </div>
+              </>
+            )}
+
             <div className={styles.priceRow}>
               <p>Career Support</p>
               <p>
-                <FaCircleCheck className="text-[#12c168] " />
+                <MdOutlineClear className="text-[#646464] " />
               </p>
             </div>
             <div className={styles.priceRow}>
               <p>Average Pricing</p>
-              <p>₹ 9,999</p>
+              <p>₹500 - ₹6,500</p>
             </div>
           </div>
         </div>
@@ -125,36 +134,41 @@ const PriceCompare = () => {
             </div>
             <div className={styles.priceRow}>
               <p>Duration</p>
-              <p>228+ Hrs</p>
+              <p>{liveHr} Hrs</p>
             </div>
             <div className={styles.priceRow}>
               <p>Live Projects</p>
               <p>30+</p>
             </div>
-            <div className={styles.priceRow}>
-              <p>Microsoft Course Certificate</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
-            <div className={styles.priceRow}>
-              <p>Project Experience Certificate</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
-            <div className={styles.priceRow}>
-              <p>Internship Certificate</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
-            <div className={styles.priceRow}>
-              <p>Final Year Project Assistance</p>
-              <p>
-                <FaCircleCheck className="text-[#12c168] " />
-              </p>
-            </div>
+            {redirectDs && (
+              <>
+                <div className={styles.priceRow}>
+                  <p>Microsoft Course Certificate</p>
+                  <p>
+                    <FaCircleCheck className="text-[#12c168] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Project Experience Certificate</p>
+                  <p>
+                    <FaCircleCheck className="text-[#12c168] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Internship Certificate</p>
+                  <p>
+                    <FaCircleCheck className="text-[#12c168] " />
+                  </p>
+                </div>
+                <div className={styles.priceRow}>
+                  <p>Final Year Project Assistance</p>
+                  <p>
+                    <FaCircleCheck className="text-[#12c168] " />
+                  </p>
+                </div>
+              </>
+            )}
+
             <div className={styles.priceRow}>
               <p>Career Support</p>
               <p>
@@ -163,7 +177,7 @@ const PriceCompare = () => {
             </div>
             <div className={styles.priceRow}>
               <p>Average Pricing</p>
-              <p>₹ 9,999</p>
+              <p>₹80,000 - ₹5,00,000</p>
             </div>
           </div>
         </div>

@@ -57,7 +57,7 @@ const BottomPrice = ({
         </div>
       </Popup>
       <button id={idBtnO} onClick={() => popupShow()}>
-        Free Counselling
+        Apply For Counselling
       </button>
     </div>
   );

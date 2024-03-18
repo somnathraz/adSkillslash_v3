@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import styles from "./SeoSyllabus.module.css";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
-import Link from "next/link";
-import Image from "next/image";
-import { AiOutlineTool } from "react-icons/ai";
-import { BiCheck, BiTimeFive } from "react-icons/bi";
-import { BsDot } from "react-icons/bs";
+import { BiCheck } from "react-icons/bi";
+import { IoRemoveOutline } from "react-icons/io5";
+import { MdOutlinePlayCircle } from "react-icons/md";
 import Form from "../../Global/Form/Form";
+import Popup from "../../Global/Popup/Popup";
 
 function DataScienceSyllabus({
   seoSyllabus,
@@ -16,14 +15,13 @@ function DataScienceSyllabus({
   title,
   redirectDs,
   redirectFs,
+  redirectDa,
 }) {
+  const [state, setState] = useState(seoSyllabus);
   const [popups, setPopups] = useState(false);
-
-  const popupShow = () => {
+  const popupShow = (demoClass, changeText) => {
     setPopups(true);
   };
-  const [state, setState] = useState(seoSyllabus);
-
   const handleChange = (index) => {
     setState(
       state.map((faq, i) => {
@@ -39,12 +37,27 @@ function DataScienceSyllabus({
 
   return (
     <section className={styles.Syllabus}>
+      <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+        <div className="RightPopup">
+          <h5>Download Program Handbook</h5>
+          <p>Fill the below Details to get started</p>
+          <Form
+            popup={true}
+            setTrigger={setPopups}
+            redirectDs={redirectDs}
+            redirectFs={redirectFs}
+            redirectDa={redirectDa}
+          />
+        </div>
+      </Popup>
       <div className={styles.syllabusLeft}>
         <div className={styles.Syllabusbutton}>
           <div>
-            <h2>{heading}</h2>
+            <h2 className="text-[#f18350]">{heading}</h2>
           </div>
-          <div></div>
+          <div>
+            <button onClick={() => popupShow()}>Download Brochure</button>
+          </div>
         </div>
         <p>{syllabusDesc}</p>
         <ul>
@@ -66,8 +79,11 @@ function DataScienceSyllabus({
                   >
                     <div className={styles.headWrap}>
                       <div>
-                        <h3>{Module0.title}</h3>
                         <p className={styles.sTitle}>{Module0.title1}</p>
+                        <h3 className="flex gap-1 items-center ">
+                          <MdOutlinePlayCircle />
+                          {Module0.hrs} +hrs lessons
+                        </h3>
                       </div>
                     </div>
                     <span>
@@ -99,6 +115,7 @@ function DataScienceSyllabus({
                                   key={content.chap.title}
                                 >
                                   <h4 className={styles.chapHead}>
+                                    <MdOutlinePlayCircle className="text-2xl  text-[#cd201f]" />{" "}
                                     {content.chap.title}
                                   </h4>
                                   {content.chap.desc.map((desc, i) => {
@@ -109,7 +126,7 @@ function DataScienceSyllabus({
                                         ) : (
                                           <li key={i} className={styles.points}>
                                             {" "}
-                                            <BiCheck
+                                            <IoRemoveOutline
                                               className={styles.check}
                                             />{" "}
                                             {desc}
@@ -122,6 +139,9 @@ function DataScienceSyllabus({
                               </div>
                             );
                           })}
+                          <button onClick={() => popupShow()} className="mt-2">
+                            Download Brochure
+                          </button>
                         </div>
                       ) : (
                         ""

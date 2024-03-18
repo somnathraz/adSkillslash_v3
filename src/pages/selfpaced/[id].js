@@ -102,7 +102,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           NigeriaForm={showNigeriaForm}
           title={DataScienceCourseData.data.header.title}
           seoSyllabus={DataScienceCourseData.data.seoSyllabus}
-          heading="Course Modules"
+          heading="Syllabus"
           hour={DataScienceCourseData.data.header.hour}
           redirectFs={DataScienceCourseData.data.header.FullStack}
           redirectDs={DataScienceCourseData.data.header.dataScience}
@@ -124,7 +124,14 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectFs={DataScienceCourseData.data.header.FullStack}
         />
       </div>
-      <PriceCompare />
+      <PriceCompare
+        hrs={DataScienceCourseData.data.header.hour}
+        otherHr={DataScienceCourseData.data.header.otherHr}
+        liveHr={DataScienceCourseData.data.header.liveHr}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+      />
       <div id="certificate">
         <WhyUs
           redirectDs={DataScienceCourseData.data.header.dataScience}
