@@ -13,7 +13,7 @@ const DetailTable = ({
   redirectDa,
 }) => {
   return (
-    <div className="px-40 py-10 flex flex-col gap-5 max-[1281px]:px-24 relative max-sm:px-5 max-sm:overflow-scroll bg-[#111621] max-[801px]:px-8">
+    <div className="px-40 py-10 flex flex-col gap-5 max-[1281px]:px-24 relative max-sm:px-5 max-sm:overflow-scroll bg-[#111621] max-[801px]:px-8 max-[641px]:hidden">
       <h2 className="text-white font-bold text-4xl text-center max-sm:text-2xl ">
         Skill<span style={{ borderBottom: "1px solid white" }}>slash Boo</span>
         tcamp

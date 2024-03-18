@@ -20,8 +20,22 @@ const BottomPrice = ({
   const popupShow = (demoClass, changeText) => {
     setPopups(true);
   };
-  return (
+
+  return newDataScience ? (
     <div className={styles.wrap}>
+      <div className={styles.left}>
+        <p className={styles.ofPr}>{offerPrice}</p>
+        {/* {newDataScience && <p className={styles.acPr}>{actualPrice}</p>} */}
+      </div>
+
+      <div className={styles.right} id={idBtnO}>
+        <Link href={checkoutLink} id={idBtnO}>
+          <button id={idBtnO}>Buy Now</button>
+        </Link>
+      </div>
+    </div>
+  ) : (
+    <div className={styles.flexDiv}>
       <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
         <div className="RightPopup">
           {changeHeading ? (
@@ -42,21 +56,9 @@ const BottomPrice = ({
           />
         </div>
       </Popup>
-      <div className={styles.left}>
-        <p className={styles.ofPr}>{offerPrice}</p>
-        {/* {newDataScience && <p className={styles.acPr}>{actualPrice}</p>} */}
-      </div>
-      <div className={styles.right} id={idBtnO}>
-        {newDataScience ? (
-          <Link href={checkoutLink} id={idBtnO}>
-            <button id={idBtnO}>Buy Now</button>
-          </Link>
-        ) : (
-          <button id={idBtnO} onClick={() => popupShow()}>
-            Free Counselling
-          </button>
-        )}
-      </div>
+      <button id={idBtnO} onClick={() => popupShow()}>
+        Free Counselling
+      </button>
     </div>
   );
 };

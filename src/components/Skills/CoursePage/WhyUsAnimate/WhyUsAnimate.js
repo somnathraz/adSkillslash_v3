@@ -21,7 +21,7 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
   ];
   return (
     <>
-      <div
+      {/* <div
         className="hidden max-sm:flex flex-col px-5 py-5 bg-[#111621] gap-5 mt-[40px]"
         ref={ref}
       >
@@ -51,14 +51,12 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
           </div>
           <div></div>
         </div>
-      </div>
-      <div>
+      </div> */}
+      <div className="mb-10">
         {(redirectDs || home) && (
           <div className="hidden max-sm:flex flex-col relative px-28 max-sm:px-5  max-[1281px]:px-24  items-center gap-10 pb-[10px]  pt-10 ">
             <div className="flex flex-col gap-4 items-center">
-              <h3 className="text-3xl text-[#4f419a] font-bold">
-                Triple Certification
-              </h3>
+              <h3 className="text-3xl  font-bold">Triple Certification</h3>
               <div className="grid grid-cols-1 gap-3 items-center">
                 <div className="bg-white shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
                   <div className="relative w-full h-[180px]  ">
