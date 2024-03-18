@@ -4,6 +4,8 @@ import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import styles from "./Navbar.module.css";
 import VideoPlaylist from "../Skills/Global/VideoPlaylist/VideoPlaylist";
 import Link from "next/link";
+import Popup from "../Skills/Global/Popup/Popup";
+import Form from "../Skills/Global/Form/Form";
 
 import dynamic from "next/dynamic";
 const MegaMenu = dynamic(() => import("../MegaMenu/MegaMenu"));
@@ -74,6 +76,19 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
   return (
     <div>
       <nav className={styles.nav}>
+        <Popup trigger={popups} setTrigger={setPopups} className="popupModal">
+          <div className="RightPopup">
+            <h5>Download Program Handbook</h5>
+            <p>Fill the below Details to get started</p>
+            <Form
+              popup={true}
+              setTrigger={setPopups}
+              redirectDs={redirectDs}
+              redirectFs={redirectFs}
+              redirectDa={redirectDa}
+            />
+          </div>
+        </Popup>
         {showVideo && (
           <VideoPlaylist
             setShow={showVideoF}
@@ -155,9 +170,9 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
           <button
             className={styles.mLearn}
             id={idBtnB}
-            onClick={() => showVideoF(true)}
+            onClick={() => popupShow()}
           >
-            Watch Demo
+            Download Syllabus
           </button>
 
           {ads ? (
@@ -195,8 +210,8 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
         </div>
         <div className={styles.right}>
           {ads ? (
-            <button id={idBtnB} onClick={() => showVideoF(true)}>
-              Watch Demo
+            <button id={idBtnB} onClick={() => popupShow()}>
+              Download Syllabus
             </button>
           ) : event ? (
             <>

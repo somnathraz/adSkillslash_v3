@@ -15,6 +15,8 @@ import Learn from "../../components/Skills/CoursePage/Learn/Learn";
 import WhatsappButton from "../../components/WhatsAppButton/WhatsappButton";
 import SkillsContent from "@/components/Skills/CoursePage/SkillsContent/SkillsContent";
 import BottomPrice from "@/components/Skills/BottomPrice/BottomPrice";
+import PricingSection from "@/components/Skills/CoursePage/PricingSection/PricingSection";
+import ToolsCovered from "@/components/Skills/CoursePage/ToolsCovered/ToolsCovered";
 import CareerSupport from "@/components/Skills/CoursePage/CareerSupport/CareerSupport";
 import PriceCompare from "@/components/Skills/CoursePage/PriceCompare/PriceCompare";
 
@@ -96,6 +98,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         actualPrice={actualPrice}
         newDataScience={DataScienceCourseData.data.header.newDataScience}
       />
+      <PricingSection offerPrice={offerPrice} actualPrice={actualPrice} />
       <CareerSupport />
       <div id="modules">
         <DataScienceSyllabus
@@ -108,6 +111,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           redirectDs={DataScienceCourseData.data.header.dataScience}
         />
       </div>
+      <ToolsCovered />
       <div id="certificate">
         <WhyUsAnimate
           redirectDa={DataScienceCourseData.data.header.dataAnalytics}
