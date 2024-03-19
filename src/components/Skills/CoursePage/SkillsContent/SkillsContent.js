@@ -57,7 +57,7 @@ const SkillsContent = ({
           <p className="flex gap-2 items-center justify-between py-2">
             <span className="flex gap-2 items-center">
               <MdOutlineVideocam className="text-2xl text-[#4f419a]" />
-              Course Mode
+              Learning Mode
             </span>
             <span>
               <b>Blended</b>
@@ -67,7 +67,7 @@ const SkillsContent = ({
           <p className="flex gap-2 items-center justify-between py-2">
             <span className="flex gap-2 items-center">
               <MdLiveTv className="text-2xl text-[#4f419a]" />
-              Live Doubt Session
+              1:1 Doubt Session
             </span>
             <span>
               <b>Daily</b>

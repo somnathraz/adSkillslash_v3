@@ -59,10 +59,10 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
               <h3 className="text-3xl  font-bold">Triple Certification</h3>
               <div className="grid grid-cols-[70%,70%,70%] max-[321px]:grid-cols-[60%,60%,60%] gap-2 items-center">
                 <div className="bg-black shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
-                  <div className="relative w-full h-[180px]  ">
+                  <div className="relative w-full h-[180px]  border-[1px] border-white">
                     <Image src={imageSrc[2]} fill alt="certificate image" />
                   </div>
-                  <h3 className="font-bold text-white">
+                  <h3 className="font-bold text-[#f18350]">
                     Microsoft Certificate
                   </h3>
                   <p className="text-white">
@@ -72,10 +72,10 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
                 </div>
 
                 <div className="bg-black shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
-                  <div className="relative w-full h-[180px]  ">
+                  <div className="relative w-full h-[180px] border-[1px] border-white ">
                     <Image src={imageSrc[1]} fill alt="certificate image" />
                   </div>
-                  <h3 className="font-bold text-white">
+                  <h3 className="font-bold text-[#f18350]">
                     Project Experience Certificate
                   </h3>
                   <p className="text-white">
@@ -85,10 +85,10 @@ const WhyUsAnimate = ({ redirectDa, redirectDs, home, redirectFs }) => {
                   </p>
                 </div>
                 <div className="bg-black shadow rounded-lg px-7 py-4 flex flex-col gap-3 min-[481px]:w-[75%]">
-                  <div className="relative w-full h-[180px]  ">
+                  <div className="relative w-full h-[180px]  border-[1px] border-white">
                     <Image src={imageSrc[0]} fill alt="certificate image" />
                   </div>
-                  <h3 className="font-bold text-white">
+                  <h3 className="font-bold text-[#f18350]">
                     {" "}
                     Internship Certificate
                   </h3>

@@ -158,11 +158,11 @@ function DataScienceSyllabus({
       <div>
         <div className={styles.syllabusRight}>
           <h5 className={styles.rightHeading}>
-            {title} <span>Curriculum</span>
+            Understand the complete program in 15 mins
           </h5>
           <p className={styles.rightDesc}>
-            {title} Syllabus are curated by leading faculties and industry
-            leaders.
+            Speak with out counsellors to understand the program in details and
+            clarify your doubts
           </p>
           <div>
             <Form />

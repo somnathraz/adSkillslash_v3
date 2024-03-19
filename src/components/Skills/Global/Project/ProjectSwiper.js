@@ -8,7 +8,6 @@ import styles from "./Project.module.css";
 import { Pagination, Navigation } from "swiper";
 import { SiPowerbi } from "react-icons/si";
 import { FaReact, FaDatabase } from "react-icons/fa";
-
 import { AiOutlineRobot, AiOutlineFileExcel } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa";
 

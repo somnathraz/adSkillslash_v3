@@ -175,6 +175,7 @@ const Header = ({
           <button
             className="w-full min-[642px]:w-max text-[15px] px-3 border-[1px] bg-transparent border-solid border-[#fff] text-white rounded py-2 font-medium  flex justify-center items-center 
           max-sm:text-[12px] max-sm:px-2"
+            onClick={() => showVideo(true)}
           >
             Watch Demo{" "}
             <FaYoutube className="text-[#FF0000] text-[24px] max-sm:text-[16px]" />
@@ -250,20 +251,20 @@ const Header = ({
               <p className="flex gap-2 items-center justify-between py-2">
                 <span className="flex gap-2 items-center">
                   <MdOutlineVideocam className="text-xl" />
-                  Video Lessons
+                  Learning Mode
                 </span>
                 <span>
-                  <b>{hrs} Hrs</b>
+                  <b>Blended</b>
                 </span>
               </p>
               <hr />
               <p className="flex gap-2 items-center justify-between py-2">
                 <span className="flex gap-2 items-center">
                   <MdLiveTv className="text-xl" />
-                  Live Doubt Session
+                  1:1 Doubt Session
                 </span>
                 <span>
-                  <b>Weekly</b>
+                  <b>Daily</b>
                 </span>
               </p>
               <hr />

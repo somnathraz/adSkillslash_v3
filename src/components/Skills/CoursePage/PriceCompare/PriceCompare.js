@@ -3,7 +3,14 @@ import styles from "./PriceCompare.module.css";
 import { FaCircleCheck } from "react-icons/fa6";
 import { MdOutlineClear } from "react-icons/md";
 
-const PriceCompare = ({ redirectDa, hrs, redirectDs, otherHr, liveHr }) => {
+const PriceCompare = ({
+  redirectDa,
+  hrs,
+  redirectDs,
+  otherHr,
+  liveHr,
+  offerPrice,
+}) => {
   return (
     <>
       <h2 className={styles.heading}>Skillslash Bootcamp</h2>
@@ -61,7 +68,7 @@ const PriceCompare = ({ redirectDa, hrs, redirectDs, otherHr, liveHr }) => {
             </div>
             <div className={styles.priceRow}>
               <p>Average Pricing</p>
-              <p>₹ 9,999</p>
+              <p>{offerPrice}</p>
             </div>
           </div>
         </div>
@@ -87,25 +94,25 @@ const PriceCompare = ({ redirectDa, hrs, redirectDs, otherHr, liveHr }) => {
                 <div className={styles.priceRow}>
                   <p>Microsoft Course Certificate</p>
                   <p>
-                    <MdOutlineClear className="text-[#646464] " />
+                    <MdOutlineClear className="text-[#ff5252] " />
                   </p>
                 </div>
                 <div className={styles.priceRow}>
                   <p>Project Experience Certificate</p>
                   <p>
-                    <MdOutlineClear className="text-[#646464] " />
+                    <MdOutlineClear className="text-[#ff5252] " />
                   </p>
                 </div>
                 <div className={styles.priceRow}>
                   <p>Internship Certificate</p>
                   <p>
-                    <MdOutlineClear className="text-[#646464] " />
+                    <MdOutlineClear className="text-[#ff5252] " />
                   </p>
                 </div>
                 <div className={styles.priceRow}>
                   <p>Final Year Project Assistance</p>
                   <p>
-                    <MdOutlineClear className="text-[#646464] " />
+                    <MdOutlineClear className="text-[#ff5252] " />
                   </p>
                 </div>
               </>
@@ -114,7 +121,7 @@ const PriceCompare = ({ redirectDa, hrs, redirectDs, otherHr, liveHr }) => {
             <div className={styles.priceRow}>
               <p>Career Support</p>
               <p>
-                <MdOutlineClear className="text-[#646464] " />
+                <MdOutlineClear className="text-[#ff5252] " />
               </p>
             </div>
             <div className={styles.priceRow}>
@@ -177,7 +184,7 @@ const PriceCompare = ({ redirectDa, hrs, redirectDs, otherHr, liveHr }) => {
             </div>
             <div className={styles.priceRow}>
               <p>Average Pricing</p>
-              <p>₹80,000 - ₹5,00,000</p>
+              <p>₹80,000-₹5,00,000</p>
             </div>
           </div>
         </div>

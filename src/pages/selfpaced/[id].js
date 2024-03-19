@@ -136,6 +136,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
       </div>
       <PriceCompare
         hrs={DataScienceCourseData.data.header.hour}
+        offerPrice={offerPrice}
         otherHr={DataScienceCourseData.data.header.otherHr}
         liveHr={DataScienceCourseData.data.header.liveHr}
         redirectDs={DataScienceCourseData.data.header.dataScience}
