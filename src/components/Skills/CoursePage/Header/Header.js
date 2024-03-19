@@ -116,7 +116,7 @@ const Header = ({
         <h1 className="text-5xl max-[901px]:text-2xl text-white font-bold leading-[58px] max-[1281px]:text-3xl   max-sm:text-4xl max-sm:leading-[40px] max-[361px]:text-3xl">
           {title}
         </h1>
-        <div className="flex gap-5 items-center min-[642px]:hidden">
+        <div className="flex gap-5 items-center min-[642px]:hidden max-sm:w-[90%] max-sm:mb-4 max-sm:mt-4">
           {" "}
           {ratingData.map((imgData, i) => {
             return (
@@ -168,6 +168,7 @@ const Header = ({
           <button
             className="w-full min-[642px]:w-max px-3 bg-[#f18350] text-[15px] text-white rounded py-2 font-medium  flex justify-center items-center max-sm:text-[12px] max-sm:px-2"
             id={idBtnO}
+            onClick={() => popupShow()}
           >
             Free Counselling
           </button>
