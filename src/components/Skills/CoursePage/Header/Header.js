@@ -104,7 +104,6 @@ const Header = ({
         {redirectFs && (
           <div className="relative w-[348px] max-sm:w-[310px] h-[32px] max-sm:h-[29px] mt-3 max-sm:mt-12 ">
             {/* <Image src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/static/New_skillslash/Homepage/powered-by-microsoft-(White).png" alt="PoweredByMicrosoft" width={200} height={22}/> */}
-
             <Image
               src="https://skillslash-cdn.s3.ap-south-1.amazonaws.com/NewDatascience/Header/FAANG+Software+Developer+as+Trainers.webp"
               alt="FAANG Operators"
@@ -117,7 +116,6 @@ const Header = ({
           {title}
         </h1>
         <div className="flex gap-5 items-center min-[642px]:hidden max-sm:w-[90%] max-sm:mb-4 max-sm:mt-4">
-          {" "}
           {ratingData.map((imgData, i) => {
             return (
               <div
@@ -167,7 +165,7 @@ const Header = ({
         <div className="flex  gap-3  max-[642px]:w-[80%]">
           <button
             className="w-full min-[642px]:w-max px-3 bg-[#f18350] text-[15px] text-white rounded py-2 font-medium  flex justify-center items-center max-sm:text-[12px] max-sm:px-2"
-            id={idBtnO}
+            id="clck-free-counselling"
             onClick={() => popupShow()}
           >
             Free Counselling
@@ -176,6 +174,7 @@ const Header = ({
             className="w-full min-[642px]:w-max text-[15px] px-3 border-[1px] bg-transparent border-solid border-[#fff] text-white rounded py-2 font-medium  flex justify-center items-center 
           max-sm:text-[12px] max-sm:px-2"
             onClick={() => showVideo(true)}
+            id="clck-watch-demo"
           >
             Watch Demo{" "}
             <FaYoutube className="text-[#FF0000] text-[24px] max-sm:text-[16px]" />

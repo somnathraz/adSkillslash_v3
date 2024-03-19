@@ -169,7 +169,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
 
           <button
             className={styles.mLearn}
-            id={idBtnB}
+            id="clck-download-syllabus-top"
             onClick={() => popupShow()}
           >
             Download Syllabus
@@ -210,7 +210,7 @@ const Navbar = ({ link, event, ads, redirectDs, redirectFs, redirectDa }) => {
         </div>
         <div className={styles.right}>
           {ads ? (
-            <button id={idBtnB} onClick={() => popupShow()}>
+            <button id="clck-download-syllabus-top" onClick={() => popupShow()}>
               Download Syllabus
             </button>
           ) : event ? (

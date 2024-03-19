@@ -115,6 +115,7 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
           hour={DataScienceCourseData.data.header.hour}
           redirectFs={DataScienceCourseData.data.header.FullStack}
           redirectDs={DataScienceCourseData.data.header.dataScience}
+          redirectDa={DataScienceCourseData.data.header.dataAnalytics}
         />
       </div>
       <ToolsCovered />

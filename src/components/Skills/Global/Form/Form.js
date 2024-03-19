@@ -89,7 +89,7 @@ const Form = ({
       router.push("/Thankyou/dsa");
     }
     if (redirectDa) {
-      router.push("/Thankyou/business-analytics");
+      router.push("/Thankyou/data-analytics");
     }
   };
   let btnText = "Apply Now";
@@ -193,6 +193,7 @@ const Form = ({
         ) : (
           <button
             type="submit"
+            id="clck-apply-now-form"
             className={syllabus ? styles.buttonS : styles.button}
           >
             {downloadBrochure ? "Download Now" : btnText}{" "}

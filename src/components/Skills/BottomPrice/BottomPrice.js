@@ -56,7 +56,7 @@ const BottomPrice = ({
           />
         </div>
       </Popup>
-      <button id={idBtnO} onClick={() => popupShow()}>
+      <button id="stickly-apply-for-counselling" onClick={() => popupShow()}>
         Apply For Counselling
       </button>
     </div>

@@ -56,7 +56,9 @@ function DataScienceSyllabus({
             <h2 className="text-[#f18350]">{heading}</h2>
           </div>
           <div>
-            <button onClick={() => popupShow()}>Download Syllabus</button>
+            <button onClick={() => popupShow()} id="clck-download-syllabus">
+              Download Syllabus
+            </button>
           </div>
         </div>
         <p>{syllabusDesc}</p>

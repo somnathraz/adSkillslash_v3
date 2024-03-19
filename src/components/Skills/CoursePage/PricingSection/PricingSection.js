@@ -44,6 +44,7 @@ const PricingSection = ({
             <button
               className="flex flex-col justify-center items-center bg-[#f18350] py-2 w-full"
               onClick={() => popupShow()}
+              id="clck-apply-now-fees"
             >
               Apply Now
             </button>
