@@ -65,7 +65,7 @@
             }
           }
         ],
-        "id": 1,
+        "id": 0,
         "open": false
       }
     },
@@ -356,6 +356,39 @@
           }
         ],
         "id": 3,
+        "open": false
+      }
+    },
+    {
+      "Module0": {
+        "title": "Module 9",
+        "title1": "Deployment",
+        "project": false,
+        "hrs": 8,
+        "descS": "",
+        "content": [
+          {
+            "chap": {
+              "title": "Lesson 1: Getting Started with AWS and Azure Machine Learning Services",
+              "desc": [
+                "Intro to AWS SageMaker and Azure Machine Learning",
+                "Key features and advantages",
+                "Machine learning algorithms and Use Cases"
+              ]
+            }
+          },
+          {
+            "chap": {
+              "title": "Lesson 2: Configuring and Setting up the Environments",
+              "desc": [
+                "Creating accounts with AWS and Azure",
+                "Setting the tools and SDKs (AWS CLI, Azure CLI, Azure PowerShell)",
+                "Training and deploying models (EC2 instances, GPU instances, Azure ML Compute)"
+              ]
+            }
+          }
+        ],
+        "id": 6,
         "open": false
       }
     }
