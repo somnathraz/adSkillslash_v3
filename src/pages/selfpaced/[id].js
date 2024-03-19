@@ -98,7 +98,13 @@ const DataSciencePage = ({ DataScienceCourseData }) => {
         actualPrice={actualPrice}
         newDataScience={DataScienceCourseData.data.header.newDataScience}
       />
-      <PricingSection offerPrice={offerPrice} actualPrice={actualPrice} />
+      <PricingSection
+        offerPrice={offerPrice}
+        actualPrice={actualPrice}
+        redirectDs={DataScienceCourseData.data.header.dataScience}
+        redirectFs={DataScienceCourseData.data.header.FullStack}
+        redirectDa={DataScienceCourseData.data.header.dataAnalytics}
+      />
       <CareerSupport />
       <div id="modules">
         <DataScienceSyllabus

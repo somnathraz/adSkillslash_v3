@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { FcMoneyTransfer } from "react-icons/fc";
 import Popup from "../../Global/Popup/Popup";
 import Form from "../../Global/Form/Form";
 
-const PricingSection = ({ actualPrice }) => {
+const PricingSection = ({
+  actualPrice,
+  redirectDs,
+  redirectDa,
+  redirectFs,
+}) => {
   const [popups, setPopups] = useState(false);
   const popupShow = (demoClass, changeText) => {
     setPopups(true);
