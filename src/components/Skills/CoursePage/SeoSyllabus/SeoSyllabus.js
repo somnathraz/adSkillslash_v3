@@ -56,7 +56,7 @@ function DataScienceSyllabus({
             <h2 className="text-[#f18350]">{heading}</h2>
           </div>
           <div>
-            <button onClick={() => popupShow()}>Download Brochure</button>
+            <button onClick={() => popupShow()}>Download Syllabus</button>
           </div>
         </div>
         <p>{syllabusDesc}</p>
@@ -139,9 +139,15 @@ function DataScienceSyllabus({
                               </div>
                             );
                           })}
-                          <button onClick={() => popupShow()} className="mt-2">
-                            Download Brochure
-                          </button>
+                          <div className="flex gap-2 items-center mt-3">
+                            <p>For more details </p>
+                            <button
+                              onClick={() => popupShow()}
+                              className="px-4 py-[8px] text-sm font-normal"
+                            >
+                              Download Syllabus
+                            </button>
+                          </div>
                         </div>
                       ) : (
                         ""

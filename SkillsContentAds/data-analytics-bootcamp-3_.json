@@ -30,6 +30,47 @@
   "seoSyllabus": [
     {
       "Module0": {
+        "title": "Module 0",
+        "project": false,
+        "hrs": 9,
+        "title1": "Preparatory Course",
+        "descS": "",
+        "content": [
+          {
+            "chap": {
+              "title": "Lesson 1:Introduction to Programming (3 hrs)",
+              "desc": [
+                "Source code Vs bytecode Vs machine code, Compiler Vs Interpreter, C/C++, Java Vs Python."
+              ]
+            }
+          },
+          {
+            "chap": {
+              "title": "Lesson 2: Code editors basics (1 hr)",
+              "desc": [
+                "Different type of code editors in python, Introduction to Anaconda and IDEs."
+              ]
+            }
+          },
+          {
+            "chap": {
+              "title": "Lesson 3: Python basics (1 hr)",
+              "desc": ["Variable Vs Identifiers, Strings Operators Vs Operand, Procedure oriented Vs Modular programming."]
+            }
+          },
+          {
+            "chap": {
+              "title": "Lesson 4: Statistics basics & probability (1 hr)",
+              "desc": ["Measures of Central Tendency & dispersion, Inferential statistics and Sampling theory."]
+            }
+          }
+        ],
+        "id": 1,
+        "open": false
+      }
+    },
+    {
+      "Module0": {
         "title": "Module 1 ",
         "project": false,
         "hrs": 67,
